@@ -65,7 +65,7 @@ spec:
           
           sh "gcloud container clusters get-credentials cluster-1 --zone us-central1-c --project ordinal-torch-377801"
           sh "kubectl apply -f frontend.yaml"
-          sh "kubectl set image deployments/frontendservice server=${IMAGE_TAG}"
+          sh "kubectl set image deployments/frontend server=${IMAGE_TAG}"
         }
       }
     }
